@@ -1,0 +1,120 @@
+style :root {
+    --header-color:black;
+    --font-color: black;
+    --bg-color: black;
+    margin: 0;
+    }
+
+body    {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(80, 80, 92);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: left;
+    }
+
+p   {
+    margin-right: 3in;
+    }
+
+main{
+    margin-left: 1.25in;
+    margin-right: 1.25in; 
+    }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute; /* Position absolutely at the bottom */
+    bottom: 0;
+    width: 100%;
+    margin-left: 0in;
+    margin-right: 0in;
+    }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    }
+
+.margin-wrapper {
+    background-color: white; /* Color of your "margins" */
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Optional: Limit width on large screens */
+    margin: 20px auto; /* Center the wrapper, add top/bottom margin */
+    padding: 20px; /* Size of your "margins" */
+    box-sizing: border-box; /* Include padding in width */
+    }
+
+.content {
+    background-color: white; /* Content background */
+    padding: 10px; /* Add padding inside content */
+    box-sizing: border-box; /* Include padding in width */
+    }
+
+.content-container {
+    width: 80%;
+    max-width: 960px;
+    margin: 20px 0;
+    padding: 20px;
+    }
+
+h1 {
+    text-align: left;
+    margin-left: 1.25in;
+    margin-right: 1.25in;
+    }
+
+table {
+    border: 2px solid white;
+    width: 100%;
+    }
+
+th,
+td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    }
+
+hr {
+    border-color: white;
+    width: 50%;
+    }
+a {
+    color:white; /* Sets the default link color */
+  }
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #367c39;
+}

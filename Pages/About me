@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="ProfileStyle.css">
+</head>
+<body>
+    <header>
+        <h1>About Me </h1>
+    </header>
+        <main>
+            <p>Hi my name is Juan Acero welcome to my profile website! I am currently a student at SJSU and majoring in MIS.
+            Some of my hobbies include playing the Pokemon TCG, watching new shows, building custom keyboards, and finding great places to eat.
+           <br> <br>I've competed at the Regional Championships for Pokemon at Sacramento, and continue to compete at local tournaments.
+            My favorite pokemon is a tie between Froakie and Sewaddle.
+           <br> <br>My passion for keyboards has been present ever since I started attending SJSU. The first keyboard I built was a year long project where 
+            I slowly found the parts that really empahized the quality and care that I put into my academics and daily life.
+            <br>Keyboards typically come in 5 main parts:
+            <ul>
+                <li>The bottom and top casings</li>
+                    <li>Switches</li>
+                    <li>Keycaps</li>
+                   <li> Plate </li>
+                   <li> Mounting Style </li>
+            </ul>
+            These parts go into deeper levels of complexity the more you invest into the keyboard space.
+            </p>
+            <p>
+                <a href="Pages/Juan Acero Resume.pdf" download="Juan_Acero_Resume.pdf">Download my resume</a> 
+            </p>
+            <a href="../Profile Project.html">back to home</a>
+        </main>
+</body>
+<footer>&copy; 2025 Juan Acero</footer>
+</html>

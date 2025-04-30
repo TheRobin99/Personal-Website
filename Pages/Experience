@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="ProfileStyle.css">
+</head>
+<header><h1>Professional/Work Experience</h1></header>
+<body>
+    <section id="Professional/Work Experience">
+        <body>
+           <main>
+            <p>
+                <h3>Flying Fish Swim School</h3>
+                <ul>
+                    <li>Establish positive working relationships with clients and adjusted teaching style to meet thier needs</li>
+                    <li>Providing detailed and thorough training to new staff ensuring high levels of client satisfaction and retention</li>
+                    <li>Offer consultations to clients aimed at effectively communicating goals and fostering stronger relationships</li>
+                </ul>
+            </p>
+            <p>
+                <h3>Wells Fargo, Bank Teller</h3>
+                <ul>
+                    <li>Collaborated with a team of 5 bankers to further the experience of high-value clients</li>
+                    <li>Performed with consistent accuracy 10 unqiue banking services to an average of 200 clients per day</li>
+                </ul>
+            </p>
+            <p>
+               <h3>See's Candy, Sales Associate</h3> 
+                <ul>
+                    <li>Handled store deposits of amounts varying $1000-$4000 on a daily basis</li>
+                    <li>Trained, lead, and motivated a team of 6 people to achieving a 100K sales group title</li>
+                    <li>Periodic retraining to uphold policies during the pandemic</li>
+                </ul>
+            </p>
+            <a href="../Profile Project.html">back to home</a>
+        </main> 
+        </body>
+      
+    </section>
+ </body>
+</section>
+</body>
+<footer>&copy; 2025 Juan Acero</footer>
+</html>

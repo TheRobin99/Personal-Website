@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(80, 80, 92);
+            padding-bottom: 50px; /* Add padding at the bottom for the footer */
+            min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
+            position: relative; /* Needed for absolute positioning of the footer */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #367c39;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute; /* Position absolutely at the bottom */
+            bottom: 0;
+            width: 100%;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            main {
+                width: 95%;
+            }
+        }
+        a {
+            color:white; /* Sets the default link color */
+            margin-left: 1.25in;
+            }
+    </style>
+</head>
+    <body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+        <main>
+        <form id="contactForm" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div id="name-error" class="error-message"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+             <div id="email-error" class="error-message"></div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+             <div id="message-error" class="error-message"></div>
+
+            <button type="submit">Send Message</button>
+        </form>
+        </main>
+
+    <script>
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', (event) => {
+        let hasErrors = false;
+
+        // Reset error messages
+        document.getElementById('name-error').textContent = '';
+        document.getElementById('email-error').textContent = '';
+        document.getElementById('message-error').textContent = '';
+
+        // Name validation
+        const nameInput = document.getElementById('name');
+        if (!nameInput.value.trim()) {
+            document.getElementById('name-error').textContent = 'Please enter your name.';
+            hasErrors = true;
+        }
+
+        // Email validation
+        const emailInput = document.getElementById('email');
+        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; // Basic email regex
+        if (!emailInput.value.trim()) {
+            document.getElementById('email-error').textContent = 'Please enter your email address.';
+            hasErrors = true;
+        } else if (!emailRegex.test(emailInput.value.trim())) {
+            document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+            hasErrors = true;
+        }
+
+        // Message validation
+        const messageInput = document.getElementById('message');
+        if (!messageInput.value.trim()) {
+            document.getElementById('message-error').textContent = 'Please enter your message.';
+            hasErrors = true;
+        }
+
+        if (hasErrors) {
+            event.preventDefault(); // Prevent form submission if there are errors
+        } else {
+           //  alert('Form submitted successfully!'); //  Replace with actual submission logic
+        }
+    });
+    </script>
+        <a href="../Profile Project.html">back to home</a>
+    </body>
+<footer>
+    <footer>&copy; 2025 Juan Acero</footer>
+</footer>
+</html>

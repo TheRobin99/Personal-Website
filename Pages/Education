@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="ProfileStyle.css">
+</head>
+<body>
+    <header><h1>Education</h1></header>
+    <section id="Education">
+        <body>
+            <main>
+                <br>
+            I am currently a student at SJSU and majoring in MIS graduating in May 2025. Some of the relevant coursework I've taken are:
+            <ul>
+                <li>Business Strategy & Information Systems</li>
+                    <li>Quantitative Business Analysis</li>
+                    <li>Database Management Systems</li>
+                   <li> System Analysis and Design </li>
+                   <li> Web-Based Computing </li>
+            </ul>
+           <br>
+            <a href="../Profile Project.html">back to home</a>
+        </main>
+        </body>
+    </section>
+</body>
+<footer>&copy; 2025 Juan Acero</footer>
+</html>
